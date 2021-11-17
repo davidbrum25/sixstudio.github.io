@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Six Studio</title>
+	<title>SIXSTUDIO</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
+<a id="top"></a>
 <body class="is-preload">
 <!-- Sidebar -->
 	<section id="sidebar">
@@ -17,7 +19,7 @@
 			
 			<nav>
 				<ul>
-					<li><a href="#intro">¡Hola!</a></li>
+					<li><a href="#" onclick="scroll(0,0)">¡Hola!</a></li>
 					<li><a href="#one">¿Quiénes somos?</a></li>
 					<li><a href="#two">¿Qué hacemos?</a></li>
 					<li><a href="#three">¡Contactanos!</a></li>
@@ -26,29 +28,30 @@
 		</div>
 	</section>
 
-<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Intro -->
-		
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="video-container">
-					<video autoplay loop muted id="banner-fdo">
-						<source src="images/banner.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="inner">
+	<div id="video" class="static-bg-video">
+		<div class="video-container">
+			<video autoplay loop muted id="banner-fdo">
+				<source src="images/banner.mp4" type="video/mp4">
+			</video>
+			
+			<div class="info-video">
 					<h1>Somos Six Studio</h1>
-					
-					<P>Desde La Plata, Buenos Aires, nos especializamos en el desarrollo de ilustración y animación 2D/ 3D.
+					<P>Desde La Plata, Buenos Aires,
+					nos especializamos en el desarrollo
+					de ilustración y animación 2D/3D.
 					</P>
-										
+					<br>
+					<p id="info-bajada">
+					En nuestro estudio creemos fuertemente en el cuidado artesanal y gusto artístico como fuerza motora al momento de encarar nuestros proyectos, y ofrecemos nuestra experiencia e inquietud innovadora al servicio de distintos clientes a nivel global con la finalidad de contar sus historias de manera creativa.
+					</p>
 					<ul class="actions">
 						<li><a href="#two" class="button scrolly">+ Info</a></li>
 					</ul>
 				</div>
-			</section>
+		</div>
+	</div>
 
+<!-- Wrapper -->
 		<!-- quienes somos -->
 			<section id="one" class="wrapper style2 spotlights">
 				
@@ -94,7 +97,7 @@
 					<div class="content">
 						<div class="inner">
 							<h2 class="non-break">Nacho Rodríguez</h2> <h3 class="non-break">(Director de Arte)</h3>
-							<p>Ilustrador y concept artist especializado en background design. Licenciado en Diseño Multimedial (UNLP). A cargo de la dirección artística de las producciones animadas. </p>
+							<p>Ilustrador y concept artist especializado en background design. Licenciado en Diseño Multimedial (UNLP). A cargo de la dirección artística de las producciones animadas.</p>
 							<ul class="icons">
 								<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 								<li><a href="https://www.instagram.com/nachissimo" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -111,8 +114,8 @@
 					<a href="#" class="image"><img src="images/map.png" alt="" data-position="center center" /></a>
 					<div class="content">
 						<div class="inner">
-							<h2 class="non-break">Martín Prenassi</h2> <h3 class="non-break">(Diseñador de Personajes)</h3>
-							<p>Ilustrador y concept artist  especializado en character design. Diseñador en Comunicación Visual (UNLP). A cargo de la dirección artística de las producciones animadas.
+							<h2 class="non-break">Martín Prenassi</h2> <h3 class="non-break">(Director de Arte)</h3>
+							<p>Ilustrador y concept artist  especializado en Character design. Licenciado en Diseño en Comunicación Visual (UNLP). A cargo de la dirección artística de las producciones audiovisuales.
 								</p>
 							<ul class="icons">
 								<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
@@ -149,7 +152,7 @@
 					<div class="content">
 						<div class="inner">
 							<h2 class="non-break">Francisco Páez</h2> <h3 class="non-break">(Director Técnico)</h3>
-							<p>Licenciado en Diseño Multimedial (UNLP), Generalista 3D, encargado de la gestión de proyectos y organización del pipeline de producciones animadas en 3D.</p>
+							<p>Licenciado en Diseño Multimedial (UNLP), Generalista 3D, trabajo en la gestión de proyectos y organización del pipeline de producciones animadas.</p>
 							<ul class="icons">
 								<!--<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 								<li><a href="https://instagram.com/juanquico" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -167,13 +170,13 @@
 			<section id="two" class="wrapper style3 fade-up">
 				<div class="inner">
 					<h2>¿Qué Hacemos?</h2>
-					<p>En nuestro estudio creemos fuertemente en el cuidado artesanal y gusto artístico como fuerza motora al momento de encarar nuestros proyectos. Ofrecemos nuestra experiencia e inquietud innovadora al servicio de distintos clientes a nivel global con la finalidad de contar sus historias de manera creativa.
+					<p>En nuestro estudio creemos fuertemente en el cuidado artesanal y gusto artístico como fuerza motora al momento de encarar nuestros proyectos, y ofrecemos nuestra experiencia e inquietud innovadora al servicio de distintos clientes a nivel global con la finalidad de contar sus historias de manera creativa.
 					</p>
 					<div class="features">
 						<section>
 							<span class="icon solid major fa-film"></span>
 							<h3>Animacion 2D</h3>
-							<p>Animación,Intermedios, Clean Up, Color</p>
+							<p>Animación, Asistencia, Clean Up</p>
 						</section>
 						<section>
 							<span class="icon solid major fa-desktop"></span>
@@ -188,7 +191,7 @@
 						<section>
 							<span class="icon solid major fa-cog"></span>
 							<h3>Dirección técnica</h3>
-							<p>Gestión de proyectos en blender, desarrollo</p>
+							<p>Gestión de proyectos 3D en blender, desarrollo</p>
 						</section>
 						
 					</div>
@@ -257,7 +260,7 @@
 
 <!-- Footer -->
 	<footer id="footer" class="wrapper style1-alt">
-	<div class="inner">
+	<div class="footer-info">
 		<ul class="menu">
 			<li>&copy; SIXSTUDIO. All rights reserved. <span>2021</span></li><li><a href="https://www.instagram.com/holasixstudio/">INSTAGRAM</a></li>
 		</ul>

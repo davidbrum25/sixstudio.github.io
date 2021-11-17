@@ -73,14 +73,53 @@ input, select, textarea {
 
 /* Custom */
 
+html{scroll-behavior: smooth;}
+
 #one{
 	margin-left: 18em;
-	margin-top: 4.23em;
+	margin-top: 100vh;
 	margin-bottom: -10em;
 }
 
 #two, #three{
 	margin-bottom: -10em;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	transition: all 0.5s ease;
+}
+
+.static-bg-video{
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.info-video{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-shadow: 0 0 2px black;
+}
+
+#info-bajada{
+    max-width: 65%;
+    font-size: .8em;
+}
+
+#one section{ opacity:.6;}
+#one section:hover{ opacity:1;}
+
+.footer-info{
+    font-size: .6em;
+    margin: 0.8em;
 }
 
 /* SCROLLBAR */
@@ -3232,7 +3271,7 @@ input, select, textarea {
 			margin-top: 10em;
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
-			width: 45em;
+			width: 60em;
 			text-shadow: 0px 0px 3px black;
 		}
 
@@ -3268,9 +3307,7 @@ input, select, textarea {
 			background-color: #1c113f; /*#5e42a6;*/
 		}
 
-		.wrapper.style1-alt {
-			background-color: black; /* #493382;*/
-		}
+.wrapper.style1-alt {background-color: #000000ab;}
 
 		.wrapper.style2 {
 			background-color: #323232;
@@ -3516,8 +3553,19 @@ input, select, textarea {
 
 /* Footer */
 
+#footer{
+    float: left;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20vw;
+    height: 2em;
+    border-radius: 15px 0 0 0;
+    box-shadow: 0px 0px 3px black;
+}
+
 	#sidebar + #wrapper + #footer {
-		margin-left: 18em;
+		margin-left: 0;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3601,15 +3649,24 @@ input, select, textarea {
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				transform: translateY(0);
-				-moz-transition: opacity 0.15s ease, -moz-transform 0.75s ease;
-				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
-				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
-				transition: opacity 0.15s ease, transform 0.75s ease;
+				-moz-transition: opacity 0.15s ease-in-out, -moz-transform 0.75s ease;
+				-webkit-transition: opacity 0.15s ease-in-out, -webkit-transform 0.75s ease;
+				-ms-transition: opacity 0.15s ease-in-out, -ms-transform 0.75s ease;
+				transition: opacity 0.15s ease-in-out, transform 0.75s ease;
 				margin: 1.5em 0 0 0;
 				opacity: 1;
 				padding: 0;
 				position: relative;
+				background: #0000000d;
 			}
+			
+			#sidebar nav > ul > li:hover{
+				-ms-transition: background 0.8s ease;
+				-moz-transition: background 0.8s ease;
+				-webkit-transition: background 0.8s ease;
+				background: black;
+			}
+
 
 				#sidebar nav > ul > li:first-child {
 					margin: 0;
