@@ -73,6 +73,19 @@ input, select, textarea {
 
 /* Custom */
 
+.bg_grid{
+    background: transparent;
+    background-image: radial-gradient(#00000050 1px, transparent 0);
+    background-size: 3px 3px;
+    background-position: -2px -2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
 html{scroll-behavior: smooth;}
 
 #one{
@@ -104,10 +117,11 @@ html{scroll-behavior: smooth;}
 
 .info-video{
     display: block;
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 30%;
     text-shadow: 0 0 2px black;
+    z-index: 100;
 }
 
 #info-bajada{
@@ -3308,7 +3322,7 @@ html{scroll-behavior: smooth;}
 		}
 
 		.wrapper.style1 {
-			background-color: #1c113f; /*#5e42a6;*/
+			background-color: #261c3e; /*#5e42a6;*/
 		}
 
 .wrapper.style1-alt {background-color: #000000ab;}
@@ -3950,7 +3964,6 @@ html{scroll-behavior: smooth;}
 
 			.info-video {
 				display: block;
-				position: unset;
 				top: 0;
 				left: 0;
 				text-shadow: 0 0 2px black;
@@ -3983,7 +3996,6 @@ html{scroll-behavior: smooth;}
 			
 			.info-video {
 				display: block;
-				position: unset;
 				top: 0;
 				left: 0;
 				text-shadow: 0 0 2px black;
