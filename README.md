@@ -7,6 +7,3 @@ SixStudio
 
 [Instagram](https://www.instagram.com/holasixstudio/)
 [Mail](holasixstudio@gmail.com)
-
-## dev:
-[David Brum] (https://www.instagram.com/hdavidbrum)
