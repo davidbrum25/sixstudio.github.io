@@ -117,7 +117,7 @@ html{scroll-behavior: smooth;}
 
 .info-video{
     display: block;
-    position: relative;
+    position: absolute;
     top: 40%;
     left: 30%;
     text-shadow: 0 0 2px black;
@@ -136,6 +136,13 @@ html{scroll-behavior: smooth;}
     font-size: .6em;
     margin: 0.8em;
 }
+
+#flag_en img, #flag_es img{
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+}
+
 
 /* SCROLLBAR */
 /* width */
@@ -3575,8 +3582,7 @@ html{scroll-behavior: smooth;}
     float: left;
     position: fixed;
     bottom: 0;
-    right: 0;
-    width: 20vw;
+    right: 0;    
     height: 2em;
     border-radius: 15px 0 0 0;
     box-shadow: 0px 0px 3px black;
@@ -3971,6 +3977,7 @@ html{scroll-behavior: smooth;}
 				text-align: center;
 				margin: auto;
 				margin-top: 12vh;
+				position:relative;
 			}
 			.info-video .actions{display: block;}
 
@@ -4003,6 +4010,7 @@ html{scroll-behavior: smooth;}
 				margin: auto;
 				margin-top: 5vh;
 				text-align: center;
+				position:relative;
 			}
 			
 			#one{margin-left:0;}
