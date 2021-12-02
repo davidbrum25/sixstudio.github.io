@@ -73,6 +73,11 @@ input, select, textarea {
 
 /* Custom */
 
+.side_logo {
+	width: 70%;
+	margin: auto;
+}
+
 .bg_grid{
     background: transparent;
     background-image: radial-gradient(#00000050 1px, transparent 0);
@@ -132,6 +137,11 @@ html{scroll-behavior: smooth;}
 #one section{ opacity:.6;}
 #one section:hover{ opacity:1;}
 
+#four{
+	height: 100vh;
+	margin-bottom: -10em;
+}
+
 .footer-info{
     font-size: .6em;
     margin: 0.8em;
@@ -143,6 +153,37 @@ html{scroll-behavior: smooth;}
     height: 1em;
 }
 
+/*	Portfolio	*/
+.port_pic{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59%;
+    height: 49vh;
+    display: inline-block;
+    box-shadow: 0px 0px 15px black;
+    margin-right: 5%;
+    opacity:.5;
+}
+.port_pic:hover{opacity:1;}
+#port_1{background-image: url(../img/port_1.jpeg);}
+#port_2{background-image: url(../img/port_2.jpg);}
+.port_info{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    font-size: .8em;
+    text-transform: uppercase !important;
+}
+.port_info p{text-transform: none !important;}
+#four .features section{padding: 2em 2em 1em 2em;}
+
+#two, #four{
+	background-color: #101010;
+	opacity: 1;
+	background: radial-gradient(circle, transparent 20%, #101010 20%, #101010 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #101010 20%, #101010 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#212121 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #212121 1.8px, #101010 1.8px) -0.9px 0;
+	background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+}
 
 /* SCROLLBAR */
 /* width */
@@ -2069,9 +2110,8 @@ html{scroll-behavior: smooth;}
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		background: rgb(40 71 104 / 14%);
 		margin: 0 0 2em 0;
 	}
 
@@ -2934,7 +2974,7 @@ html{scroll-behavior: smooth;}
 
 			ul.menu > li {
 				border-left: 0;
-				display: block;
+				display: inline-block;
 				line-height: inherit;
 				margin: 0.5em 0 0 0;
 				padding-left: 0;
@@ -3932,6 +3972,8 @@ html{scroll-behavior: smooth;}
 					height: inherit;
 					line-height: inherit;
 				}
+				
+				#sidebar .inner img{width:4%;}
 
 				#sidebar nav {
 					height: inherit;
@@ -3991,11 +4033,11 @@ html{scroll-behavior: smooth;}
 			#one section .content {text-align: center;}
 			#one section .content .icons {margin:0;}
 		
-			#two .inner, #three .inner{margin-left:0;}
+			#two .inner, #three .inner, #four .inner{margin-left:0;}
 		
-			#two, #three{height:100%;}
+			#two, #three, #four{height:100%; min-height:100vh;}
 
-			#footer{width: 38vw;}
+			#footer{width: 48vw;}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4024,9 +4066,9 @@ html{scroll-behavior: smooth;}
 			#one section .content {text-align: center;}
 			#one section .content .icons {margin:0;}
 		
-			#two .inner, #three .inner{margin-left:0;}
+			#two .inner, #three .inner, #four .inner{margin-left:0;}
 		
-			#two, #three{height:100%;}
+			#two, #three, #four{height:100%;}
 			
 			#footer {
 				float: left;
@@ -4039,6 +4081,9 @@ html{scroll-behavior: smooth;}
 				box-shadow: none;
 				text-align: center;
 			}
+			
+			.port_pic{width:100%; height:68vh;opacity:1;}
+			.port_info{width:100%;text-align:center;}
 			
 		}
 		
